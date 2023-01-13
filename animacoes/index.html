@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Componente Slide</h1>
+    <div class="slide-container">
+        <section class="slide fade">
+            <div class="number">1 / 4</div>
+            <img src="img/1122861.jpg" alt="Paisagem 01" style="width: 100%">
+        </section>
+        <section class="slide fade">
+            <div class="number">2 / 4</div>
+            <img src="img/299-2995662_free-fire.jpg" alt="Paisagem 02" style="width: 100%">
+        </section>
+        <section class="slide fade">
+            <div class="number">3 / 4</div>
+            <img src="img/b96f6ea1360b34376abeab140e929b90.jpg" alt="Paisagem 03" style="width: 100%">
+        </section>
+        <section class="slide fade">
+            <div class="number">4 / 4</div>
+            <img src="img/garena-free-fire-2019-ys-1600x900.jpg" alt="Paisagem 04" style="width: 100%">
+        </section>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+    
+    <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>

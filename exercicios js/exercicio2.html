@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    
+    <section id="calculoNotas">
+        <h2>Notas</h2>
+        <button onclick="calcularNotas()">Calcular Notas</button>
+    </section>
+
+</body>
+
+    <script>
+
+            function calcularNotas() {
+                let nota1 = Number(window.prompt(`Digite a Nota 1`))
+                let nota2 = Number(window.prompt(`Digite a Nota 2`))
+                const media = (nota1 + nota2)/2
+
+                let resultado = window.document.getElementById(`calculoNotas`);
+                resultado.innerHTML = `<p>A média entre ${nota1} e ${nota2} é igual a ${media}</p>`
+
+            }
+    </script>
+</html>

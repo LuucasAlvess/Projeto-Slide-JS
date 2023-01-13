@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JavaScript</title>
+</head>
+<body>
+    
+    <section id="calculoSomas">
+        <h2>Valores</h2>
+        <button onclick="calcularSoma()">Calcular valores</button>
+    </section>
+</body>
+
+    <script>
+            
+            function calcularSoma() {
+                let nota1 = Number(window.prompt(`Digite um valor`))
+                let nota2 = Number(window.prompt(`Digite outro valor`))
+                const soma = (nota1 + nota2)
+                let resultado = window.document.getElementById(`calculoSomas`);
+                resultado.innerHTML += `<p>A soma entre ${nota1} e ${nota2} é igual a ${soma}.</p>`
+               
+        }   
+    </script>
+</html>
